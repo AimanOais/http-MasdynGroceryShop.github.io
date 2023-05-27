@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <link rel="stylesheet" href="StyleV3.css">
+    </head>
+    <body>
+        <h1>MasDyn Grocery Shop
+            <img src="imgV3/cartIcon.png">
+        </h1>
+        <nav>
+            <div class="Wrapper"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="select">
+                        <select id="page-select">
+                            <option value="">Products</option>
+                            <option value="SardinV3.html">Sardin</option>
+                            <option value="SardinV3.1.html">Vegetables</option>
+                            <option value="SardinV3.2.html">Fruits</option>
+                            <option value="SardinV3.3.html">Kitchen utensils</option>
+                            
+                        </select>
+                        <button id="go-button">Go</button>
+
+                            <script>
+                                // Get references to the select and button elements
+                                var select = document.getElementById('page-select');
+                                var button = document.getElementById('go-button');
+
+                                // Add an event listener to the button
+                                button.addEventListener('click', function() {
+                                    // Get the selected value from the select element
+                                    var selectedValue = select.value;
+
+                                    // Check if a valid option is selected
+                                    if (selectedValue !== '') {
+                                        // Navigate to the selected page
+                                        window.location.href = selectedValue;
+                                    }
+                                });
+                            </script>
+
+                    </div>
+                </li>
+                <li><a href="FeedbackV3.html">FeedBack</a></li>
+                <li><a href="AboutUsV3.html">About Us </a></li>
+            </ul>
+            </div>
+        </nav>
+        <div class="heading">
+        <h2>About Us</h2>
+        <p>"Customer service is priority at all day"</p>
+        </div>
+        <div class="contain">
+            <section class="about">
+                <div class="about-image">
+                    <img src="imgV3/vege.webp">
+                </div>
+                <div class="about-content">
+                    <h4>Why you must visit our shop</h4>
+                    <p>Wide Range of Products: At MasDyn Groceries Shop, we offer a vast selection of products to cater to all your grocery needs. From fresh produce, pantry staples, and household essentials to specialty items and organic options, we have a diverse range of products to suit every preference and dietary requirement</p>
+                    <a href="" class="read-more">Read-more</a>
+                </div>
+            </section>
+        </div>    
+
+            <script src="/ScriptV3.js"></script>
+            <footer class="footer">
+                <div class="container">
+                  <p>&copy; 2023 MasDyn Grocery Shop. All rights reserved.</p>
+                </div>
+              </footer>
+    </body>
+</html>

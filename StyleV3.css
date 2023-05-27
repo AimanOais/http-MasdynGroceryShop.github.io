@@ -1,0 +1,271 @@
+*{
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    outline: none;
+  
+}
+
+.footer {
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #d8d3d3;
+  }
+  
+.heading{
+    text-align: center;
+    margin: 20px;
+
+}
+.heading h2{
+    font-size: 35px;
+    color: #000;
+    margin-bottom: 25px;
+    position:relative;
+}
+.heading h2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+}
+.contain{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-image img{
+    max-width:  100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+    border-radius: 25px;
+}
+.about-image:hover img{
+    transform: scale(1.2);
+}
+.about-content{
+    flex: 1;
+}
+.about-content h2{
+    font-size: 23px;
+    line-height: 18px;
+    color: #333;
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #696666;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about-content .read-more:hover{
+    background-color: #3e8e41;
+}
+button{
+    margin: 0 auto;
+}
+
+body{
+    background-color: #c0bebe;
+    
+}
+
+h1{
+    text-align: center;
+    color: #4caf50;
+    padding: 0;
+    align-items: center;
+    text-decoration:underline;
+    
+}
+h1 img{
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+h2{
+    text-align: center;
+}
+ h2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+}
+h3{
+    text-align: center;
+    text-decoration: underline;
+}
+h4{
+    text-decoration: underline;
+}
+
+div{
+    margin: 0 auto;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+
+ul{
+    text-align: center;
+
+}
+
+ul li {
+list-style :none;
+display :inline-block;
+text-align: center;
+line-height :100px ;
+
+}
+
+ul li a {
+    display: block;
+    text-decoration: underline;
+    font-size: 40 px;
+    font-family: arial;
+    color:#1e1e1e;
+    padding: 0 20px;
+
+}
+ul li a select{
+    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+body.container{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 360px;
+    border-radius: 25px;
+    background:rgb(107, 107, 109);
+    box-shadow: 0 0 8px #rgba(250,250,250,0.6);
+    
+}
+
+.container .form-group{
+    width: 100%;
+    text-align: center;
+    padding: 25px 20px;
+    justify-content: center;
+}
+
+form h1{
+    padding: 10px 0;
+
+}
+
+.feedback-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+  }
+
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  td img{
+    border-radius: 25px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sardin</title>
+        <link rel="stylesheet" href="StyleV3.css">
+    </head>
+    <body>
+        <h1>MasDyn Grocery Shop
+            <img src="imgV3/cartIcon.png">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="select">
+                        <select id="page-select">
+                            <option value="">Products</option>
+                            <option value="SardinV3.html">Sardin</option>
+                            <option value="SardinV3.1.html">Vegetables</option>
+                            <option value="SardinV3.1.html">Fruits</option>
+                            <option value="SardinV3.3.html">Kitchen utensils</option>
+                        </select>
+                        <button id="go-button">Go</button>
+
+                            <script>
+                                // Get references to the select and button elements
+                                var select = document.getElementById('page-select');
+                                var button = document.getElementById('go-button');
+
+                                // Add an event listener to the button
+                                button.addEventListener('click', function() {
+                                    // Get the selected value from the select element
+                                    var selectedValue = select.value;
+
+                                    // Check if a valid option is selected
+                                    if (selectedValue !== '') {
+                                        // Navigate to the selected page
+                                        window.location.href = selectedValue;
+                                    }
+                                });
+                            </script>
+
+                    </div>
+                </li>
+                <li><a href="FeedbackV3.html">FeedBack</a></li>
+                <li><a href="AboutUsV3.html">About Us </a></li>
+            </ul>
+        </nav>
+        <h2>Sardin</h2>
+        <div id="table_Sardin">
+            <table border="2">
+                <th>
+                    <tr>
+                        <th>Bil</th>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>price</th>
+                        <th>purchase</th>
+                    </tr>
+                </th>
+                <td>
+                    <tr>
+                        <td>1.</td>
+                        <td>
+                            <img src="imgV3/adabi.jpg"width="250" height="250">
+                        </td>
+                        <td>Sardin adabi</td>
+                        <td>RM 180.00</td>
+                        <td>
+                            <button>
+                                <a href="Buy.html">Buy </a>
+                            </button>
+                        </td>
+                        
+                    </tr>
+                </td>
+                <td>
+                    <tr>
+                        <td>2.</td>
+                        <td>
+                            <img src="imgV3/ayamBrand.jpg"width="250" height="250">
+                        </td>
+                        <td>Sardin ayam brand</td>
+                        <td>RM 400.00</td>
+                        <td>
+                            <button>
+                                <a href="Buy.html">Buy </a>
+                            </button>
+                        </td>
+                    </tr>
+                </td>
+                <td>
+                    <tr>
+                        <td>3.</td>
+                        <td>
+                            <img src="imgV3/cinta.jpg"width="250" height="250">
+                        </td>
+                        <td>Sardin cinta</td>
+                        <td>RM 400.00</td>
+                        <td>
+                            <button>
+                                <a href="Buy.html">Buy </a>
+                            </button>
+                        </td>
+                    </tr>
+                </td>
+                <td>
+                    <tr>
+                        <td>4.</td>
+                        <td>
+                            <img src="imgV3/Rizqi.jpg"width="250" height="250">
+                        </td>
+                        <td>Sardin Rizqi</td>
+                        <td>RM 400.00</td>
+                        <td>
+                            <button>
+                                <a href="Buy.html">Buy </a>
+                            </button>
+                        </td>
+                    </tr>
+                </td>
+                <td>
+                    <tr>
+                        <td>5.</td>
+                        <td>
+                            <img src="imgV3/KingCup.jpg" width="250" height="250">
+                        </td>
+                        <td>Sardin Kingkup</td>
+                        <td>RM 400.00</td>
+                        <td>
+                            <button>
+                                <a href="Buy.html">Buy </a>
+                            </button>
+                        </td>
+                    </tr>
+                </td>
+                
+            </table>
+            <script src="ScriptV3.js"></script>
+            <footer class="footer">
+                <div class="container">
+                  <p>&copy; 2023 MasDyn Grocery Shop. All rights reserved.</p>
+                </div>
+              </footer>    
+        </div>
+    </body>
+</html>

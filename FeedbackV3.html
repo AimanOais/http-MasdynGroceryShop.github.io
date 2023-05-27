@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback</title>
+        <link rel="stylesheet" href="StyleV3.css">
+    </head>
+<body>
+    <h1>MasDyn Grocery Shop
+        <img src="imgV3/cartIcon.png">
+    </h1>
+    <nav>
+        <div class="Wrapper">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="select">
+                        <select id="page-select">
+                            <option value="">Products</option>
+                            <option value="SardinV3.html">Sardin</option>
+                            <option value="SardinV3.1.html">Vegetables</option>
+                            <option value="SardinV3.2.html">Fruits</option>
+                            <option value="SardinV3.3.html">kitchen utensils</option>
+                        </select>
+                        <button id="go-button">Go</button>
+
+                            <script>
+                                // Get references to the select and button elements
+                                var select = document.getElementById('page-select');
+                                var button = document.getElementById('go-button');
+
+                                // Add an event listener to the button
+                                button.addEventListener('click', function() {
+                                    // Get the selected value from the select element
+                                    var selectedValue = select.value;
+
+                                    // Check if a valid option is selected
+                                    if (selectedValue !== '') {
+                                        // Navigate to the selected page
+                                        window.location.href = selectedValue;
+                                    }
+                                });
+                            </script>
+
+                    </div>
+                </li>
+                <li><a href="FeedbackV3.html">FeedBack</a></li>
+                <li><a href="AboutUsV3.html">About Us </a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <form class="feedback-form">
+            <h3>Give Your Feedback</h3>
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+              <label for="opinions">Opinions</label>
+              <textarea id="opinions" rows="5" placeholder="Enter your opinions here..."></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+          
+    </div>
+    <footer class="footer">
+        <div class="container">
+          <p>&copy; 2023 MasDyn Grocery Shop. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
